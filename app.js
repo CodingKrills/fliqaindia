@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 5000
 const mongoose = require('mongoose')
 
 var conn = mongoose.connect('mongodb+srv://MyUsername:MyPassword@cluster0.wqxgi.mongodb.net/FliqaIndia?retryWrites=true&w=majority',
