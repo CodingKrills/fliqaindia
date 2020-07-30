@@ -1,0 +1,50 @@
+<%- include('./partials/head'); %>
+
+<div class="container">
+    <div class="row justify-content-md-center" style="margin:5rem 0;">
+        <div class="col-12 col-md-6 card shadow">
+
+    <form class="user" action="/signup" method="POST" style="padding: 1rem;">
+        
+        <h2 class="text-center">
+            <%= title %>
+        </h2>
+
+        <div class="form-group">
+            <input type="text" class="form-control form-control-user" 
+            placeholder="Enter your username"
+            name="username" required>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control form-control-user" 
+            placeholder="Enter your email"
+            name="email" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control form-control-user"
+            placeholder="Enter your password"
+            name="password" required>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control form-control-user" 
+            placeholder="Confirm password"
+            name="confpassword" required>
+        </div>
+        <input type="submit" name="submit" value="Signup" class="btn btn-primary btn-user btn-block"> 
+        <br>
+        <a class="text-muted ml-4" href="/">Log In ?</a>
+
+        <a class="text-success ml-4">
+            <% if( msg != ''){ %>
+                <%= msg %>
+                <% } %>
+        </a>
+              
+    </form>
+
+</div>
+</div>
+</div>
+
+<%- include('./partials/scripts'); %>

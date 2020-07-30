@@ -1,0 +1,243 @@
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d0e1fa;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2b9db6;
+}
+
+/* Font- Handler */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+#logofi {
+  background-image: url("../logo-png.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  width: 140px;
+  height: 32px;
+}
+
+.header {
+  font-family: "Raleway", sans-serif;
+  margin: 3% 0;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #424242;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    margin: 8% 0;
+    font-size: 2rem;
+  }
+}
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.paragraph {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Button Handler */
+
+.btn-res {
+  color: #fff;
+  padding: 10px 60px;
+  transition: transform 0.2s;
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(156, 156, 156, 1);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(156, 156, 156, 1);
+  box-shadow: 0px 0px 10px -1px rgba(156, 156, 156, 1);
+}
+
+.btn-res:hover {
+  transform: scale(1.1);
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 38px -1px rgba(168, 168, 168, 1);
+  -moz-box-shadow: 0px 0px 38px -1px rgba(168, 168, 168, 1);
+  box-shadow: 0px 0px 38px -1px rgba(168, 168, 168, 1);
+}
+
+@media only screen and (max-width: 600px) {
+  .btn-res {
+    font-size: 14px;
+
+    color: #fff;
+    padding: 10px 40px;
+  }
+}
+
+/* box shadows */
+
+.service-img-shadow {
+  -webkit-box-shadow: 0px 0px 50px -3px rgba(181,181,181,0.77); 
+  box-shadow: 0px 0px 50px -3px rgba(181,181,181,0.77);
+}
+
+/* Jumbotron */
+.graphics-jumbotron {
+  margin-top: 4.2%;
+}
+
+.graphics-jumbotron-text {
+  padding: 5% 0;
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .graphics-jumbotron {
+      margin-top: 18%;
+  }
+}
+.graphics-jumbotron{
+  background-image: url('.././img/services/graphics/logodesign-jumbo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photography-jumbotron {
+  margin-top: 4.2%;
+}
+
+.photography-jumbotron-text {
+  padding: 5% 0;
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .photography-jumbotron {
+      margin-top: 18%;
+  }
+}
+.photography-jumbotron{
+  background-image: url('.././img/services/photography/photography-jumbotron.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* NAVBAR ************************************************************************************** */
+
+.navbar-header.col {
+  padding: 0 !important;
+}
+
+.navbar {
+  background: #fff;
+  padding: 0.5em 4rem;
+  /* border-bottom: 1px solid #d6d6d6; */
+
+  -webkit-box-shadow: 0px 0px 14px -7px #000000;
+  box-shadow: 0px 0px 14px -7px #000000;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+}
+
+.nav-link img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin: -8px 0;
+  float: left;
+  margin-right: 10px;
+}
+
+.navbar .navbar-brand {
+  color: #555;
+  padding-left: 0;
+  font-size: 20px;
+  padding-right: 50px;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar .navbar-brand b {
+  font-weight: bold;
+  color: #000000;
+}
+
+.navbar ul.nav li a:hover,
+.navbar ul.nav li a:focus {
+  color: #000000 !important;
+}
+
+.navbar ul.nav li.active a,
+.navbar ul.nav li.active a:hover,
+.navbar ul.nav li.active a:focus {
+  color: #000000 !important;
+  background: transparent !important;
+}
+
+.navbar .dropdown-item i {
+  font-size: 16px;
+  min-width: 22px;
+}
+
+.navbar .nav-item {
+  margin: 0 10px 0 10px;
+}
+
+.navbar .nav-item.open > a {
+  background: none !important;
+}
+
+.navbar .dropdown-menu {
+  border-radius: 1px;
+  border-color: #e5e5e5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .dropdown-menu li a {
+  color: #777;
+  padding: 8px 20px;
+  line-height: normal;
+}
+
+/* MEDIA QUERY NAVBAR ******************************************************************************/
+
+@media only screen and (max-width: 600px) {
+  .navbar-right {
+    display: none;
+  }
+}
+
+/* MULTI CAROSEL ****************************************************************************************/
+
+.multi-carosel {
+  margin: 2% 0% 0% 0%;
+  padding: 4% 0% 0% 0%;
+  color: #230c33;
+  text-transform: uppercase;
+}
+
+.multi-carosel-text {
+  margin: 8% 0;
+}
+
+#recomm {
+  margin: 2%;
+}
+
+.recomm-img {
+  width: 10px;
+}

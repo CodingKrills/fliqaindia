@@ -1,0 +1,788 @@
+<%- include('partials/head.ejs'); -%>
+<%- include('partials/nav.ejs'); -%>
+
+	<!-- Hero -Carosel ******************************************************************************* -->
+
+	<style>
+		/*  */
+		.hero-carosel {
+			margin-top: 4%;
+			display: block;
+
+			width: auto;
+			min-width: 100%;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.hero-carosel-img {
+			position: relative;
+		}
+
+		.hero-carosel-text {
+			position: absolute;
+			top: 30%;
+			left: 10%;
+
+			z-index: 999;
+		}
+
+		@media only screen and (min-width: 600px) {
+
+			.hideDesktop {
+				display: none;
+			}
+		}
+
+		@media only screen and (max-width: 600px) {
+
+			.hidePhone {
+				display: none;
+			}
+		}
+
+		@media only screen and (max-width: 599px) {
+
+			.in-hero-carosel .owl-item img {
+				width: 100%;
+				height: 40vh;
+			}
+
+		}
+	</style>
+
+	<style>
+		.in-hero-carosel .item .cover {
+			padding: 75px 0;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.164);
+			display: flex;
+			align-items: center;
+		}
+
+		.in-hero-carosel .item .cover .header-content {
+			position: relative;
+			padding: 56px;
+			overflow: hidden;
+		}
+
+		.in-hero-carosel .item .cover .header-content h1 , h2 {
+			font-size: 56px;
+			font-weight: 600;
+			margin: 5px 0 20px;
+			word-spacing: 3px;
+			color: #fff;
+		}
+
+		.in-hero-carosel .owl-item.active h1 {
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+			animation-name: fadeInRight;
+			animation-delay: 0.3s;
+		}
+
+		.in-hero-carosel .owl-item.active h2 {
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+			animation-name: fadeInLeft;
+			animation-delay: 0.3s;
+		}
+
+	</style>
+
+
+	<div class="hero-carosel hidePhone">
+
+		<div id="hero-carousel" class="in-hero-carosel owl-carousel owl-theme owl-carousel-img">
+			<div class="item">
+				<img src="./img/home/hero-carosel/hero-carosel-1.jpg" alt="images not found">
+				<div class="cover">
+					<div class="container">
+						<div class="header-content">
+							<div class="line"></div>
+
+							<h2>Fliqaindia for</h2>
+							<h1>Photography</h1>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="./img/home/hero-carosel/hero-carosel-2.jpg" alt="images not found">
+				<div class="cover">
+					<div class="container">
+						<div class="header-content">
+							<div class="line animated bounceInLeft"></div>
+
+							<h2>Fliqaindia for</h2>
+							<h1>Videography</h1>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="./img/home/hero-carosel/hero-carosel-3.jpg" alt="images not found">
+				<div class="cover">
+					<div class="container">
+						<div class="header-content">
+							<div class="line animated bounceInLeft"></div>
+
+							<h2>Fliqaindia for</h2>
+							<h1>Graphics</h1>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<style>
+		@media only screen and (max-width: 600px) {
+
+			#mobile-hero-carousel {
+				margin-top: 20%;
+			}
+			.in-hero-carosel .item .cover {
+				padding: 20px 0;
+				position: absolute;
+				width: 100%;
+				height: 40vh;
+				top: 0;
+				left: 0;
+				background: rgba(0, 0, 0, 0.288);
+				display: flex;
+				align-items: center;
+			}
+
+			.in-hero-carosel .item .cover .header-content {
+				position: relative;
+				padding: 56px;
+				overflow: hidden;
+			}
+
+			.in-hero-carosel .item .cover .header-content h1 , h2 {
+				font-size: 30px;
+				font-weight: 600;
+				margin: 5px 0 20px;
+				word-spacing: 3px;
+				color: #fff;
+			}
+
+			.in-hero-carosel .item .cover .header-content h1{
+				font-size: 40px;
+			}
+		}
+	</style>
+	<div class="hero-carosel hideDesktop">
+
+		<div id="mobile-hero-carousel" class="in-hero-carosel owl-carousel owl-theme owl-carousel-img">
+			<div class="item">
+				<img class="img-fluid" src="/hero carosel/mobile-carosel-2.jpg" alt="images not found">
+				<div class="cover">
+					<div class="container">
+						<div class="header-content">
+							<div class="line"></div>
+
+							<h2>Fliqaindia for</h2>
+							<h1>Photography</h1>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img class="img-fluid" src="/hero carosel/mobile-carosel-1.jpg" alt="images not found">
+				<div class="cover">
+					<div class="container">
+						<div class="header-content">
+							<div class="line animated bounceInLeft"></div>
+
+							<h2>Fliqaindia for</h2>
+							<h1>Videography</h1>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img class="img-fluid" src="/hero carosel/mobile-carosel-3.jpg" alt="images not found">
+				<div class="cover">
+					<div class="container">
+						<div class="header-content">
+							<div class="line animated bounceInLeft"></div>
+
+							<h2>Fliqaindia for </h2>
+							<h1>Graphics</h1>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- Book Now Button ******************************************************************************* -->
+
+	<section class="booknow mt-4">
+		<div class="text-center">
+			<button type="button" class="btn btn-lg rounded-pill btn-res " style="background-color: #2B9DB6;">
+				Book Now
+			</button>
+		</div>
+	</section>
+
+
+	<!-- Multi Carosel  ******************************************************************************* -->
+
+	<style>
+		.multi-carosel {
+			-webkit-box-shadow: 0px 0px 50px 6px #DBDBDB; 
+box-shadow: 0px 0px 50px 6px #DBDBDB;
+		}
+
+		#multi-carosel .item img {
+			display: block;
+			width: 50%;
+			height: 50%;
+			margin: 0 auto;
+		}
+
+		#multi-carosel .item .card {
+			background-color: #D0E1FA;
+			border: none;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.mcct {
+				font-size: 12px;
+			}
+
+			.card-body {
+				padding: 3px;
+			}
+		}
+	</style>
+
+	<section class="multi-carosel" style="background: #D0E1FA;">
+		<div class="container">
+
+			<div id="multi-carosel" class="owl-carousel owl-theme text-center">
+
+				<div class="item">
+					<div class="card">
+						<img src="/img/home/multi-carosel/wedding.svg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="mcct">Wedding Photography</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="card">
+						<img src="/img/home/multi-carosel/beach.svg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="mcct">Beach Photography</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="card">
+						<img src="/img/home/multi-carosel/love.svg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="mcct">Pre Wedding Shoot</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="card">
+						<img src="/img/home/multi-carosel/influencer.svg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="mcct">portfolio Shoot</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="card">
+						<img src="/img/home/multi-carosel/drone.svg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="mcct">Drone Service</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="card">
+						<img src="/img/home/multi-carosel/graphics.svg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="mcct">Graphics</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<style>
+		.box {
+			position: relative;
+		}
+
+		.about-us {
+			margin: 5% 0;
+		}
+
+		.img-title {
+			position: absolute;
+			color: rgb(0, 0, 0);
+			text-align: center;
+			left: 0;
+			right: 0;
+			top: 10%;
+			padding: 2% 10%;
+			font-size: 18px;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.img-title {
+				position: absolute;
+				color: rgb(0, 0, 0);
+				text-align: center;
+				top: 5%;
+				padding: 0 5%;
+				font-size: 15px;
+			}
+
+			.about-us {
+				margin: 2% 0 0% 0%;
+			}
+		}
+	</style>
+
+	<div class="box container">
+		<img class="img-fluid" src="./img/home/about-bg/about.svg" alt="header image" />
+		<div class="img-title">
+			<h2 class="text-center about-us header">About Us</h2>
+			<p class="paragraph">
+				At Fliqaindia it is our squad, creativity and enthusiasm which we believe is at our competitive
+				edge. Our staff is committed to giving you a quality of which you are sincerely worthy. We will
+				have a tailored Photography services as effective and hospitable as possible, extremely
+				adaptable and accessible to your needs. We also seek and take on innovative new ventures and
+				collaborate alongside
+				<span class="hideDesktop"><a href="/about.html">read more</a></span> <span class="hidePhone">
+					you to crack the mould and push the norms beyond your expectations.
+					Whether it is wedding photography, pre wedding photography, portfolio Photoshoot, aerial
+					drone photography, or graphic design service, Fliqaindia is always at your services.
+					<br>
+					<br>
+					For your promotions, advertising and many more purposes, Fliqaindia offers graphics services.
+					Our graphic designers strive to construct a concept in a quick look, use text, icons, pictures,
+					colors, logos etc. to generate visual effects. Fliqaindia offers unparalleled UI and UX design
+					services to improve the website design interface and include interactive mobile apps. We
+					provide a one-stop solution such as Logo Design, Business card, Posters, banners, brochure, and
+					many more.
+					<br>
+					<br>
+					For professional photography services, Fliqaindia is an insight-orientated partner and marketing
+					concierge that bring our members together with leading art consumers, creative directors,
+					photo publishers and representatives, in a fresh and innovative approach. Our trip started 5
+					years ago and now Startup India, Startup Bengal, and Imagesbazaar have sent us this
+					recognition to make you realize what we are doing. Our company now ranges across India and
+					it's because of our delighted clients who have held confidence in us and rendered each striking
+					moment special. We are also trusted by Justdial, WedMEGood, Shaadisaga, weddingwire and so
+					many well known event organizers.
+				</span>
+			</p>
+		</div>
+	</div>
+
+
+	<style>
+		.multi-regular {
+			margin: 4% 0;
+		}
+
+		.reg-img {
+			height: 80px;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.multi-regular {
+				margin: 20% 0 0% 0%;
+			}
+
+			.reg-slide {
+				margin-left: 16%;
+			}
+
+			.reg-img {
+				height: 80px;
+			}
+		}
+	</style>
+
+	<section class="multi-regular">
+		<div class="container-fluid">
+			<div id="multi-regular" class="owl-carousel owl-theme text-center">
+				<div class="item reg-slide">
+					<img class="reg-img" src="/img/logos/untitled (1).svg" alt="" />
+				</div>
+				<div class="item reg-slide">
+					<img class="reg-img" src="/img/logos/untitled (2).svg" alt="" />
+				</div>
+				<div class="item reg-slide">
+					<img class="reg-img" src="/img/logos/ib.svg" alt="" />
+				</div>
+				<div class="item reg-slide">
+					<img class="reg-img" src="/img/logos/untitled (3).svg" alt="" />
+				</div>
+				<div class="item reg-slide">
+					<img class="reg-img" src="/img/logos/can.svg" alt="" />
+				</div>
+				<div class="item reg-slide">
+					<img class="reg-img" src="img/logos/untitled (4).svg" alt="" />
+				</div>
+				<div class="item reg-slide">
+					<img class="reg-img" src="/img/logos/untitled (5).svg" alt="" />
+				</div>
+				<div class="item reg-slide">
+					<img class="reg-img" src="/img/logos/untitled (7).svg" alt="" />
+				</div>
+				<div class="item reg-slide">
+					<img class="reg-img" src="/img/logos/logo.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--  -->
+
+
+	<style>
+		.make-space {
+			margin-bottom: 2%;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.make-space {
+				margin-bottom: 1.5%;
+			}
+		}
+	</style>
+
+	<section>
+		<div class="container my-4">
+
+			<h2 class="text-center header">Services We Offer</h2>
+
+			<div class="row">
+
+				<div class="col-md-6 col-sm-12 make-space">
+
+					<img class="img-fluid service-img-shadow " src="/img/home/service/Frame 101.png" alt="">
+
+				</div>
+
+				<div class="col-md-6 col-sm-12 make-space">
+
+					<img class="img-fluid service-img-shadow " src="/img/home/service/Frame 102.png" alt="">
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-6 col-sm-12 make-space">
+
+					<img class="img-fluid service-img-shadow " src="/img/home/service/Frame 105.png" alt="">
+
+				</div>
+
+				<div class="col-md-6 col-sm-12 make-space">
+
+					<img class="img-fluid service-img-shadow " src="/img/home/service/Frame 106.png" alt="">
+
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+
+	<div class="text-center exploremore">
+		<button type="button" class="btn shadow btn-res btn-lg rounded-pill shadow" style="background-color: #FF3D6F">
+			Explore More </button>
+	</div>
+
+
+
+	<section>
+		<div class="container-fluid">
+
+			<h2 class="text-center header">Offers For You</h2>
+
+			<section class="ofu">
+				<div class="">
+
+					<div id="ofu" class="owl-carousel owl-theme text-center">
+
+						<div class="item">
+							<div class="card">
+								<img class="img-fluid" src="/img/home/ofy/offer.png" class="card-img-top" alt="...">
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="card">
+								<img class="img-fluid" src="/img/home/ofy/offer2.png" class="card-img-top" alt="...">
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="card">
+								<img class="img-fluid" src="/img/home/ofy/offer3.png" class="card-img-top" alt="...">
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="card">
+								<img class="img-fluid" src="/img/home/ofy/offer4.png" class="card-img-top" alt="...">
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="card">
+								<img class="img-fluid" src="/img/home/ofy/offer5.png" class="card-img-top" alt="...">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</section>
+
+
+	<style>
+		.okf {
+			padding: 0% 0% 4% 0%;
+		}
+
+		.okf-text {
+			text-align: center;
+			width: 60%;
+			margin: 0 auto;
+		}
+
+		.okf-img {
+			width: 18rem;
+		}
+
+		@media only screen and (max-width: 600px) {
+
+			.okf-heading-text {
+				font-size: 15px;
+			}
+
+			.okf-text {
+				font-size: 10px;
+			}
+
+			.okf-img {
+				width: 8rem;
+			}
+		}
+	</style>
+
+	<section class="okf">
+		<div class="container-fluid">
+			<h2 class="text-center header">Our Key Features</h2>
+			<div class="row">
+				<div class="col text-center">
+					<img class="okf-img" src="/img/home/okf/best-quality.svg" alt="">
+					<h4 class="okf-heading-text">Best Quality</h4>
+					<p class="okf-text hidePhone">
+						The only approach to maintain Fliqaindia's longevity is to offer its products and services to
+						the
+						highest quality. Price over quantity is our priority.
+					</p>
+				</div>
+				<div class="col text-center">
+					<img class="okf-img" src="/img/home/okf/customer-satisfaction.svg" alt="">
+					<h4 class="okf-heading-text">Hassle free Delivery</h4>
+					<p class="okf-text hidePhone">
+						We are now eligible for instant delivery. Fortunately, Fliqaindia typically takes on the
+						complexities of the design cycle more than gladly, because we prioritize our customers’ needs.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col text-center">
+					<img class="okf-img" src="/img/home/okf/haselfree-delivery.svg" alt="">
+					<h4 class="okf-heading-text">Customer Satisfaction</h4>
+					<p class="okf-text hidePhone">
+						Loyalty contributes in continuing fulfillment. Fliqaindia therefore considers customer
+						satisfaction to be its top priority. What we do highlight more than what we speak.
+					</p>
+				</div>
+				<div class="col text-center">
+					<img class="okf-img" src="/img/home/okf/secure-payment.svg" alt="">
+					<h4 class="okf-heading-text">Secure Payment</h4>
+					<p class="okf-text hidePhone">
+						Using a skilled firm by your side will save the expense of hiring a custom photographer per case
+						and client demand. At Fliqaindia, we work according to your priorities and restrictions.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<style>
+		.testimonial {
+
+			background-color: #ffffff;
+			background-image: url("./img/testimony/testimony-bg-svg.svg");
+			background-size: cover;
+		}
+
+		.test {
+			padding: 2% 2%;
+		}
+
+		.testimonial-img {
+			margin: 0 auto;
+			height: 100px;
+			width: 100px;
+		}
+
+		.img-round {
+			border-radius: 50%;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.test {
+				padding: 4%;
+			}
+		}
+	</style>
+
+	<section>
+		<div class="testimonial container-fluid" style="padding: 2% 0 0 0;">
+
+			<h2 class="text-center header mb-4 ">
+				<small>TESTIMONY</small>
+				<br>
+				People are talking</h2>
+
+			<section class="test">
+				<div class="">
+
+					<div class="row" style="padding: 4% 0;">
+						<div class="col-12 col-md-12">
+							<div id="home-testimony" class="owl-carousel owl-theme text-center">
+
+								<div class="item">
+									<div class="testimonial-img">
+										<img class="img-round" src="https://via.placeholder.com/50x50.png" alt="...">
+									</div>
+									<p class="testimonial-text">
+										Ajay Sharma
+									</p>
+									<p class="testimonial-text">
+										Classic Photographers is amazing. I chose the photographer I loved based on readily-available portfolios, and I wasn't disappointed. The photographers showed up and we're pleasant, friendly, fun, warm, helpful, and like one of the family. I definitely recommend going with Classic Photographers! The email and call correspondence is also incredibly prompt and friendly. Do not hesitate to chose a photographer from this wonderful team!
+
+									</p>
+								</div>
+
+								<div class="item">
+									<div class="testimonial-img">
+										<img class="img-round" src="https://via.placeholder.com/50x50.png" alt="...">
+									</div>
+									<p class="testimonial-text">
+										Rashmi meena
+									</p>
+									<p class="testimonial-text">
+										“Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever… It remembers little things, long after you have forgotten everything.”You are doing an amazing work!!
+									</p>
+									
+								</div>
+
+								<div class="item">
+									<div class="testimonial-img">
+										<img class="img-round" src="https://via.placeholder.com/50x50.png" alt="...">
+									</div>
+									<p class="testimonial-text">
+										Rahul Das
+									</p>
+									<p class="testimonial-text">
+										Wonderful experience and great photographers. Absolutely loved their services and the pictures were perfect.The working style is extremely professional, with special attention to the customers' requests and intricate details. You guys are doing a great job! It's been an honour to have you guys!! Thank you so much.
+									</p>
+								</div>
+
+								<div class="item">
+									<div class="testimonial-img">
+										<img class="img-round" src="https://via.placeholder.com/50x50.png" alt="...">
+									</div>
+									<p class="testimonial-text">										
+										vikash singh
+									</p>
+									<p class="testimonial-text">
+										Wow!!! We love love love the images you captured of our wedding!!
+										Thank you so much – they are so special to us and I already printed a couple for family still in the country, which they were super excited about.
+										We will treasure these photos and the memories they so perfectly capture for life 😀
+										I’ll let you know when the USB comes through too. Thanks for sharing so quickly too – I was thinking we would have several weeks to wait at least. So exciting to get them while everyone is still around and in wedding mode!
+										Kind regards,
+									</p>
+								</div>
+
+								<div class="item">
+									<div class="testimonial-img">
+										<img class="img-round" src="https://via.placeholder.com/50x50.png" alt="...">
+									</div>
+									<p class="testimonial-text">																				
+										Godwin Geo
+									</p>
+									<p class="testimonial-text">
+										It was a wonderful experience with a great photographers.there way of caring customers is very good.the working style and caring customers is extremely professional.its my pleasure to have all of  you guys. Thank you so much..
+									</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+		</div>
+	</section>
+
+
+<%- include('partials/footer.ejs'); -%>
+<%- include('partials/scripts.ejs'); -%>

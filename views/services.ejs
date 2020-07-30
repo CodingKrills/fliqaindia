@@ -1,0 +1,383 @@
+<%- include('partials/head.ejs'); -%>
+<%- include('partials/nav.ejs'); -%>
+
+
+<style>
+    .start {
+      margin-top: 10%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .start {
+        margin-top: 32%;
+      }
+    }
+  </style>
+
+  <div class="container start">
+    <h2 class="text-center header">
+      Welcome to our services
+    </h2>
+  </div>
+
+<section style="background-color: rgba(208, 225, 250, 0.16);padding: 5% 0;">
+  <div class="container">
+    <div id="services-header" class="owl-carousel owl-theme">
+      <div class="item">
+        <a href="/services/photography/">
+          <img src="./img/services/service1.png" class="card-img-top" alt="...">
+        </a>
+      </div>
+      <div class="item">
+        <a href="/services/videography/">
+          <img src="./img/services/service2.png" class="card-img-top" alt="...">
+        </a>
+      </div>
+      <div class="item">
+        <a href="/services/graphics/">
+          <img src="./img/services/service3.png" class="card-img-top" alt="...">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <style>
+    .card {
+      border: #fff;
+    }
+
+    .photography-services-card-content {
+      text-align: center;
+      padding: 5% 8%;
+      background-color: #F7FAFE;
+      margin: 0 5%;
+    }
+
+    .photography-services-content-heading {
+      font-size: 2.2rem;
+      padding: 2% 0% 4% ;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .photography-services-card-content {
+        text-align: center;
+        padding: 8% 4%;
+        background-color: #F7FAFE;
+        margin: 0 5%;
+      }
+
+      .photography-services-content-heading {
+        font-size: 1.5rem;
+        padding: 2%;
+      }
+
+      .booknow {
+        margin: 2% 0 0 0;
+      }
+
+      .btn-res {
+        font-size: 14px;
+
+        color: #fff;
+        padding: 10px 40px;
+      }
+    }
+  </style>
+
+  <h2 class="text-center my-4 header">
+    Photography Services
+  </h2>
+
+  <div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-6" style="padding: 2%;">
+        <img class="service-img-shadow img-fluid" src="/img/services/wedding-photoshoot.jpg" class="card-img" alt="...">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body my-4 photography-services-card-content">
+          <h5 class="card-title photography-services-content-heading">Wedding Photography </h5>
+          <p class="card-text">
+            In addition to get the photos of the most important marriage events, we place the focus on
+            imagination to portray them. At Fliqaindia we are always in the quest for reflections, interesting
+            foregrounds and backgrounds. Our innovative mix of lighting techniques and our imaginative
+            post processing enables us to create amazing and imaginative creativity.
+          </p>
+          <section class="booknow">
+            <div class="text-center">
+              <a href="/services/photography/wedding-photography" class="btn btn-lg rounded-pill shadow btn-res"
+                style="background-color: #B1B2CD;">
+                Get Started
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row no-gutters flex-column-reverse flex-md-row">
+      <div class="col-md-6">
+        <div class="card-body my-4 photography-services-card-content">
+          <h5 class="card-title photography-services-content-heading">Pre-Wedding Photography</h5>
+          <p class="card-text">
+            Let's grab the first recollections of your lovely new trip. If they are expressions of candid joy or
+            casual looks, the photos act as prized souvenirs. This album will be a conversation source that
+            you can encounter again many times over the next several decades.
+          </p>
+          <section class="booknow">
+            <div class="text-center">
+              <a href="/services/photography/pre-wedding-photography"
+                class="btn btn-lg rounded-pill shadow btn-res"
+                style="background-color: #B1B2CD;">
+                Get Started
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="col-md-6" style="padding: 2%;">
+        <img class="service-img-shadow img-fluid" src="/img/services/Pre-wedding-photoshoot.jpg" class="card-img" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="row no-gutters">
+      <div class="col-md-6" style="padding: 2%;">
+        <img class="service-img-shadow img-fluid" src="/img/services/portfolio-photoshoot.jpg" class="card-img" alt="...">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body my-4 photography-services-card-content">
+          <h5 class="card-title photography-services-content-heading">Portrait Photoshoot</h5>
+          <p class="card-text">
+            Fliqaindia provides a broad variety of Portrait Photography Services to reach a better role in the
+            market. The service offered is delivered in compliance with the latest technologies and the
+            established requirements. Our photography services have been approved by honorable
+            customers and all thanks to its hassle-free operation.
+          </p>
+          <section class="booknow">
+            <div class="text-center">
+              <a href="/services/photography/portfolio-photoshoot/"
+                class="btn btn-lg rounded-pill shadow btn-res"
+                style="background-color: #B1B2CD;">
+                Get Started
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row no-gutters flex-column-reverse flex-md-row">
+      <div class="col-md-6">
+        <div class="card-body my-4 photography-services-card-content">
+          <h5 class="card-title photography-services-content-heading">Drone Services</h5>
+          <p class="card-text">
+            Get first-class aerial imagery, images, maps and data from one of our aerial drone photography
+            services. Fliqaindia's capacity is sufficiently broad to enable quick delivery times. Our network's
+            experienced drone operators are well-proven and ready to take on whatever mission you are
+            forwarding to us.
+          </p>
+          <section class="booknow">
+            <div class="text-center">
+              <a href="/services/photography/drone-service"
+                class="btn btn-lg rounded-pill shadow btn-res"
+                style="background-color: #B1B2CD;">
+                Get Started
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="col-md-6" style="padding: 2%;">
+        <img class="service-img-shadow img-fluid" src="/img/services/Pre-wedding-photoshoot.jpg" class="card-img" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <section class="booknow my-4">
+    <div class="text-center">
+      <a class="btn btn-lg rounded-pill shadow btn-res" href="/services/photography"
+        style="background-color: rgb(231, 0, 58);"> Explore More </a>
+    </div>
+  </section>
+
+  <h2 class="text-center header" style="margin-top: 4%;">Videography Services</h2>
+
+  <div class="card mb-3">
+    <div class="row no-gutters flex-column-reverse flex-md-row">
+      <div class="col-md-6" style="background-color: rgb(238, 238, 238);">
+        <div class="card-body my-4">
+          <small><p class="text-center">Outsourcing Videography Services</p></small>
+          <h5 class="card-title">Unmatched Sessions</h5>
+          <p class="card-text">
+            Explore the portrait photoshoot. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Explore the portrait photoshoot. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6" style="padding: 2%;">
+
+        <!-- <iframe width="600" height="480" src="https://www.youtube.com/embed/GODAlxW5Pes?rel=0&amp;controls=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+       -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <h2 class="text-center header" style="margin-top: 4%;">Graphics</h2>
+
+
+  <div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-6" style="padding: 2%;">
+        <img class="service-img-shadow img-fluid" src="/img/services/logo.jpg" class="card-img" alt="...">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body my-4 photography-services-card-content">
+          <h5 class="card-title photography-services-content-heading">
+            logo Design
+          </h5>
+          <p class="card-text">
+            <p><img src="./svg/correct.svg" alt="">&nbsp;&nbsp;Wide variety to choose from</p>
+            <p><img src="./svg/correct.svg" alt="">&nbsp;&nbsp;90 days after service backup</p>
+            <p><img src="./svg/correct.svg" alt="">&nbsp;&nbsp;Money Back guarantee</p>
+          </p>
+          <section class="booknow">
+            <div class="text-center">
+              <a href="/services/graphics/logo-design" class="btn btn-lg rounded-pill shadow btn-res"
+                style="background-color: #B1B2CD;">
+                Get Started
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="row no-gutters flex-column-reverse flex-md-row">
+      <div class="col-md-6">
+        <div class="card-body my-4 photography-services-card-content">
+          <h5 class="card-title photography-services-content-heading">Poster & Banner</h5>
+          <p class="card-text">
+            Our partnerships with leading hotels, restaurants and pubs guarantees that your party is captured
+            beautifully. We preserve the magic, madness, moods and moments in a snapshot for you.
+          </p>
+          <section class="booknow">
+            <div class="text-center">
+              <a href="/services/graphics/poster-and-banners"
+                class="btn btn-lg rounded-pill shadow btn-res"
+                style="background-color: #B1B2CD;">
+                Get Started
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="col-md-6" style="padding: 2%;">
+        <img class="service-img-shadow img-fluid" src="/img/services/poster-banner.jpg" class="card-img" alt="...">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card mb-3">
+    <div class="row no-gutters">
+      <div class="col-md-6" style="padding: 2%;">
+        <img class="service-img-shadow img-fluid" src="/img/services/poster-banner.jpg" class="card-img" alt="...">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body my-4 photography-services-card-content">
+          <h5 class="card-title photography-services-content-heading">Motion Graphics</h5>
+          <p class="card-text">
+            <p><img src="./svg/correct.svg" alt="">&nbsp;&nbsp;Strong Technology Competence</p>
+            <p><img src="./svg/correct.svg" alt="">&nbsp;&nbsp;Combination of creativity and technology</p>
+            <p><img src="./svg/correct.svg" alt="">&nbsp;&nbsp;Innovative design with content</p>
+          </p>
+          <section class="booknow">
+            <div class="text-center">
+              <a href="/services/graphics/motion-graphics" class="btn btn-lg rounded-pill shadow btn-res"
+                style="background-color: #B1B2CD;">
+                Get Started
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row no-gutters flex-column-reverse flex-md-row">
+      <div class="col-md-6">
+        <div class="card-body my-4 photography-services-card-content">
+          <h5 class="card-title photography-services-content-heading">UI/UX</h5>
+          <p class="card-text">
+            <p><img src="./svg/correct.svg" alt="">&nbsp;&nbsp;Strong Technology Competence</p>
+            <p><img src="./svg/correct.svg" alt="">&nbsp;&nbsp;User friendly Design</p>
+            <p><img src="./svg/correct.svg" alt="">&nbsp;&nbsp;Flow Convenience control</p>
+          </p>
+          <section class="booknow">
+            <div class="text-center">
+              <a href="/services/graphics/ui-ux-design" class="btn btn-lg rounded-pill shadow btn-res"
+                style="background-color: #B1B2CD;">
+                Get Started
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="col-md-6" style="padding: 2%;">
+        <img class="service-img-shadow img-fluid" src="/img/services/poster-banner.jpg" class="card-img" alt="...">
+      </div>
+    </div>
+  </div>
+
+
+
+  <section class="booknow my-4">
+    <div class="text-center">
+      <a href="/services/graphics/" class="btn btn-lg rounded-pill btn-res"
+        style="background-color: rgb(231, 0, 58);"> Explore More 
+      </a>
+    </div>
+  </section>
+
+  <div class="" style="background-color: rgb(238, 238, 238);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 p-4">
+          <h4>
+            Recieve Special Offers, new products & updates
+          </h4>
+        </div>
+        <div class="col-md-6 col-sm-12 p-4">
+          <div class="sub" style="background-color: #fff; padding: 1%; border-radius: 50px;">
+            <div class="input-group">
+              <input type="text" class="form-control border-0" placeholder="Recipient's username"
+                style="padding: 4%; border-radius: 50px;">
+              <div class="input-group-append">
+                <button class="btn btn-sm btn-primary shadow" type="submit" style="border-radius: 50px;">
+                  SUBSCRIBE NOW
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<%- include('partials/footer.ejs'); -%>
+<%- include('partials/scripts.ejs'); -%>
