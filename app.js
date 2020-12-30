@@ -3,7 +3,7 @@ const app = express()
 const port = 5000
 const mongoose = require('mongoose')
 
-var conn = mongoose.connect('mongodb+srv://MyUsername:MyPassword@cluster0.wqxgi.mongodb.net/FliqaIndia?retryWrites=true&w=majority',
+var conn = mongoose.connect('xxx',
  {useNewUrlParser: true , useCreateIndex:true, useUnifiedTopology: true}, 
     ()=>{console.log('MongoDb Connected ***')}
 );
